@@ -1,0 +1,62 @@
+<div class="" ng-controller="ContactController">
+<form data-ng-submit="addContact(contact)">
+  <div class="row">
+    <div class="col-xs-3">
+		<img src="holder.js/150x150?text=Image" data-ng-model="contact.photo" id="photo"  class="round-placeholder"  holder-fix>
+		<input type="file" id="fileInput" class="hide" />
+		
+    </div>
+    <div class="col-xs-9">
+		<div class="row left-border bottom-border right-border">
+			<input type="text" class="form-control bottom-border-only" id='firstname' data-ng-model="contact.firstname" placeholder="First name" required />
+		</div>
+		<div class="row left-border bottom-border right-border">
+			<input type="text" class="form-control bottom-border-only" id='lastname' data-ng-model="contact.lastname" placeholder="Last name" />
+		</div>
+		<div class="row left-border bottom-border right-border">
+			<input type="text" class="form-control bottom-border-only" id='company' data-ng-model="contact.company" placeholder="Company" />
+		</div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="" >
+      <div class="row bottom-border">
+	  	<addphoneno-dir contact="contact"></addphoneno>
+      </div>
+      <div class="row bottom-border">
+		<div addemail-dir contact="contact" ></div>	 
+      </div>
+      <div class="row bottom-border">
+		<div addurl-dir contact="contact" ></div>		
+      </div>
+      <div class="row bottom-border">
+		<div addaddress-dir contact="contact" ></div>		
+      </div>
+	  <div class="row pull-right">
+		<input type="submit" class="btn btn-info" value="Add Contact"/>
+	  </div>
+    </div>
+  </div>
+</form> 
+</div>
+
+<!-- Modal -->
+ <div class="modal fade" id="picModal" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Move and Scale</h4>
+        </div>
+        <div class="modal-body">
+          <div class="cropArea">
+			<img-crop image="myImage" result-image="myCroppedImage"></img-crop>
+			</div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

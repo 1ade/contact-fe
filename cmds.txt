@@ -1,0 +1,27 @@
+installation (grunt/bower etc
+http://www.sitepoint.com/kickstart-your-angularjs-development-with-yeoman-grunt-and-bower/
+
+to run browse to dir
+grunt serve
+
+to kill existing process
+taskkill /f /pid [PID]
+
+tofind service
+netstat -ao
+
+to find PID 
+sc queryex servicename
+
+installation mongodb
+-install from site
+-make a windows service
+
+angular-meteor
+https://github.com/Urigo/angular-meteor
+
+
+# to learn
+//$stateProvider
+//blaze
+john papa style guide

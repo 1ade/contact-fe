@@ -1,0 +1,9 @@
+//test cases
+when id exists load contact in page
+when id not exist load empty page
+when save call save/update service
+when delete call delete service
+when list page is clicked call list function
+when no email/phone/url/address dont display forms
+when email/phone/url/address display form
+firstname is required

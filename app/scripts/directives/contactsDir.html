@@ -1,0 +1,22 @@
+<div class="">
+  <header>
+    <h3>Contacts</h3>
+  </header>
+  <section>
+    <div>	
+		<div class="form-group has-feedback small-bottom-margin row left-border bottom-border right-border" >
+			<input type="text" class="search form-control bottom-border-only " ng-model="searchText" autocomplete="off" placeholder="Search" aria-describedby="basic-addon1">
+			<span class="glyphicon glyphicon-search form-control-feedback blue"></span>
+		</div>
+		<div class="scroll" >			
+			<div class="row bottom-border" id="{{contact._id}}" ng-repeat="contact in (filteredItems = (contacts | filter: searchText | filter: filterFn | limitTo:10 | orderBy: 'firstname' ))" >
+				<div class="row">
+					<label class=""><a ng-href="/#/contact/{{contact._id}}">{{contact.firstname+' '+contact.lastname }}</a></label>
+					<label class="pull-right del-contacts"><i class="glyphicon glyphicon-trash red" ng-click="delContact({{'\''+contact._id+'\''}})" ></i></label>
+				</div>
+			</div> 					
+		</div>	
+		
+    </div>
+  </section>
+</div>
